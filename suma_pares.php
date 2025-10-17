@@ -17,7 +17,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $suma = 0;
             foreach ($partes as $p) {
                 $n = (int)$p;
-                if ($n % 2 === 0) $suma += $n;
+                if ($n % 2 === 0) {
+                  $suma += $n
+                }
             }
             $resultado = $suma;
         }
